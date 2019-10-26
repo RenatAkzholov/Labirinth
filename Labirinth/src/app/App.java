@@ -6,7 +6,7 @@ import java.io.FileReader;
 import java.io.FileWriter;
 import java.util.HashMap;
 
-class App {
+class App { // Акжолов Ренат, Рогачев Антон. ИТ-41
     // "x,y" --> [North, East, South, West]
     HashMap<String, char[]> cells = new HashMap<String, char[]>(); 
     Direction direction = Direction.SOUTH;
