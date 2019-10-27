@@ -44,7 +44,7 @@ class App { // Акжолов Ренат, Рогачев Антон. ИТ-41
 		}
     }
 
-    private String doOneLabirinth(String line, int num) {
+    public String doOneLabirinth(String line, int num) {
         for (String str : line.split(" ")) {
             
             for (int i = 0; i < str.length(); i++) {
@@ -100,7 +100,7 @@ class App { // Акжолов Ренат, Рогачев Антон. ИТ-41
         return "Case #" + num + ":\n" + collectString();
     }
 
-    public String collectString() {
+    private String collectString() {
         String labirinth = "";
 
         for (int i = 1; i <= maxY; i++) {
@@ -112,7 +112,7 @@ class App { // Акжолов Ренат, Рогачев Антон. ИТ-41
         return labirinth;
     }
 
-    public String toHex(char[] ways) {
+    private String toHex(char[] ways) {
         char[] changedWays = new char[] {
             ways[Direction.EAST.ordinal()],
             ways[Direction.WEST.ordinal()],
